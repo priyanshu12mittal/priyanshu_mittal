@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import React, { useState } from 'react'
 import Logo from './Logo'
-import {TwitterIcon,GithubIcon,LinkedInIcon,PinterestIcon,DribbbleIcon, SunIcon, MoonIcon} from './icons'
+import {TwitterIcon,GithubIcon,LinkedInIcon,PinterestIcon,DribbbleIcon, SunIcon, MoonIcon, LeetCode, Coursera} from './icons'
 import { useRouter } from 'next/router'
 import {motion} from 'framer-motion'
 import useThemeSwticher from './hooks/useThemeSwticher'
@@ -54,11 +54,9 @@ const NavBar = () => {
           <CustomLink href='/articles'title="Articles" className=' ml-4'/>
         </nav>
         <nav className=' flex items-center justify-center flex-wrap'>
-          <motion.a whileHover={{y:-2}} whileTap={{scale:0.9}} className=' w-6 mx-3' href='https://twitter.com' target={"_blank"}><TwitterIcon /></motion.a>
           <motion.a whileHover={{y:-2}} whileTap={{scale:0.9}} href='https://github.com/priyanshu12mittal' className=' w-6 mx-3' target={"_blank"}><GithubIcon /></motion.a>
           <motion.a whileHover={{y:-2}} whileTap={{scale:0.9}} href='https://www.linkedin.com/in/priyanshu-mittal-/' className=' w-6 mx-3' target={"_blank"}><LinkedInIcon /></motion.a>
-          <motion.a whileHover={{y:-2}} whileTap={{scale:0.9}} href='https://twitter.com' className=' w-6 mx-3 bg-light rounded-full' target={"_blank"}><PinterestIcon /></motion.a>
-          <motion.a whileHover={{y:-2}} whileTap={{scale:0.9}} href='https://twitter.com' className=' w-6 ml-3' target={"_blank"}><DribbbleIcon /></motion.a>
+          <motion.a whileHover={{y:-2}} whileTap={{scale:0.9}} href='https://leetcode.com/priyanshu_mittal/' className=' w-6 mx-3 ' target={"_blank"}><LeetCode /></motion.a>
           <button onClick={()=>setMode(mode === 'light'?"dark":'light')} className={`ml-3 flex items-center justify-center rounded-full p-1 ${mode === 'light'?'bg-dark text-light':' bg-light text-dark'}`}>
             {
               mode === 'dark'?<SunIcon className="fill-dark" />:<MoonIcon className="fill-dark" />

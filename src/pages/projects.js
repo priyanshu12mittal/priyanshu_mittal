@@ -5,7 +5,12 @@ import AnimatedText from '@/components/AnimatedText'
 import Link from 'next/link'
 import Image from 'next/image'
 import { GithubIcon } from '@/components/icons'
-import project1 from '../../public/images/projects/crypto-screener-cover-image.jpg'
+import project1 from '../../public/images/projects/fp-1.png';
+import project2 from '../../public/images/projects/fp-2.png';
+import project3 from '../../public/images/projects/fp-3.png';
+import project4 from '../../public/images/projects/fp-4.png';
+import project5 from '../../public/images/projects/fp-5.png';
+import project6 from '../../public/images/projects/fp-6.png';
 import { motion } from 'framer-motion'
 import Transition from '@/components/Transition'
 
@@ -39,7 +44,7 @@ const Project = ({type,title,img,link,github})=>{
         <article className=' w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-dark bg-light p-6 relative dark:bg-dark dark:border-light xs:p-4'>
             <div className=' absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark rounded-br-3xl dark:bg-light md:-right-2 md:w-[101%] xs:h-[102%] xs:rounded-[1.5rem]' />
             <Link className=' w-full cursor-pointer overflow-hidden rounded-lg' href={link} target='_blank'>
-                <FramerImage whileHover={{scale:1.05}} transition={{duration:0.2}} src={img} alt={title} className=' w-full h-auto'></FramerImage>
+                <FramerImage whileHover={{scale:1.05}} transition={{duration:0.2}} src={img} alt={title} className=' w-full h-full'></FramerImage>
             </Link>
             <div className=' w-full flex flex-col items-start justify-between mt-4 '>
                 <span className=' text-primary font-medium text-xl dark:text-primaryDark lg:text-lg md:text-base'>{type}</span>
@@ -68,22 +73,22 @@ const projects = () => {
             <AnimatedText className=' mb-16 lg:text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl' text='Imagination Trumps Knowledge! '></AnimatedText>
             <div className=' grid-cols-12 gap-24 grid gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0'>
                 <div className=' col-span-12'>
-                   <FeaturedProject github='/' img={project1} link='/' type='Featured Project' title='Crypto Screener Application' summary='A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency.' />
+                   <FeaturedProject github='https://github.com/priyanshu12mittal/miro_clone' img={project1} link='https://miro-clone-psi.vercel.app/' type='Featured Project' title='Collaborative Work Space' summary='A feature-rich  the visual workspace for innovation using NextJs, Tailwind CSS, Convex Dev, Clerk and Liveblocks. It shows a perfect enviornment to work on your Ideas.' />
                 </div>
                 <div className=' col-span-6 sm:col-span-12'>
-                    <Project github='/' img={project1} link='/' type='Featured Project' title='Crypto Screener Application' />
+                    <Project github='https://github.com/priyanshu12mittal/modern_yt' img={project2} link='https://modern-yt.vercel.app/' type='Featured Project' title='YouTube Clone' />
                 </div>
                 <div className=' col-span-6 sm:col-span-12'>
-                    <Project github='/' img={project1} link='/' type='Featured Project' title='Crypto Screener Application' />
+                    <Project github='https://github.com/priyanshu12mittal/gpt3_web' img={project3} link='https://gpt3-web.vercel.app/' type='Featured Project' title='GPT-3 Website' />
                 </div>
                 <div className=' col-span-12'>
-                    <FeaturedProject github='/' img={project1} link='/' type='Featured Project' title='Crypto Screener Application' summary='A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency.' />
+                    <FeaturedProject github='https://github.com/priyanshu12mittal/dashboard_project' img={project4} link='https://dashboard-project-mocha.vercel.app/' type='Featured Project' title='MultiPurpose Dashboard' summary='A feature-rich Dashboard App using React, Tailwind CSS, Syncfusion and React Router. It shows detail regarding almost all the Graphs and charts. You can easily convert the data in visualization.' />
                 </div>
                 <div className=' col-span-6 sm:col-span-12'>
-                    <Project github='/' img={project1} link='/' type='Featured Project' title='Crypto Screener Application' />
+                    <Project github='https://github.com/priyanshu12mittal/weather_app' img={project5} link='https://weather-app-taupe-one-50.vercel.app/' type='Featured Project' title='Weather App' />
                 </div>
                 <div className=' col-span-6 sm:col-span-12'>
-                    <Project github='/' img={project1} link='/' type='Featured Project' title='Crypto Screener Application' />
+                    <Project github='https://github.com/priyanshu12mittal/react_hoobank' img={project6} link='https://react-hoobank-seven.vercel.app/' type='Featured Project' title='HooBank Website' />
                 </div>
             </div>
         </Layout>

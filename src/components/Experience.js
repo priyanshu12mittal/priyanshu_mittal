@@ -30,20 +30,10 @@ const Experience = () => {
         <motion.div style={{scaleY:scrollYProgress}} className=' absolute left-9 top-0 w-[4px] h-full bg-dark origin-top dark:bg-light md:w-[2px] md:left-[30px] xs:left-[20px]'></motion.div>
         <ul className=' w-full flex flex-col items-start justify-between ml-4 xs:ml-2 
         '>
-            <Details position='Software Engineer' company='Google' time='2022-Present'
-            address='Mountain View, CA' work='Worked on a team responsible for developing new features for Googles search engine, including improving the accuracy and relevance of search results and developing new tools for data analysis and visualization.' companyLink='www.google.com'
-            />
-            <Details position='Software Engineer' company='Google' time='2022-Present'
-            address='Mountain View, CA' work='Worked on a team responsible for developing new features for Googles search engine, including improving the accuracy and relevance of search results and developing new tools for data analysis and visualization.' companyLink='www.google.com'
-            />
-            <Details position='Software Engineer' company='Google' time='2022-Present'
-            address='Mountain View, CA' work='Worked on a team responsible for developing new features for Googles search engine, including improving the accuracy and relevance of search results and developing new tools for data analysis and visualization.' companyLink='www.google.com'
-            />
-            <Details position='Software Engineer' company='Google' time='2022-Present'
-            address='Mountain View, CA' work='Worked on a team responsible for developing new features for Googles search engine, including improving the accuracy and relevance of search results and developing new tools for data analysis and visualization.' companyLink='www.google.com'
-            />
-            <Details position='Software Engineer' company='Google' time='2022-Present'
-            address='Mountain View, CA' work='Worked on a team responsible for developing new features for Googles search engine, including improving the accuracy and relevance of search results and developing new tools for data analysis and visualization.' companyLink='www.google.com'
+            <Details position='Web Developer' company='Google Winter of Code' time='2022 Dec-2023 Jan '
+            address='Surat, Gujarat' work='Collaborated with a team of 4 developers to build a responsive website for a fictional company using HTML, CSS, and JavaScript in a 2-day hackathon-style event
+            • Implemented smooth scrolling, responsive navbar, image sliders, and modals from scratch to enhance
+            UI/UX' companyLink='www.google.com'
             />
         </ul>
       </div>

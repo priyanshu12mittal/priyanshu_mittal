@@ -31,16 +31,8 @@ const Education = () => {
         <motion.div style={{scaleY:scrollYProgress}} className=' absolute left-9 top-0 w-[4px] h-full bg-dark origin-top dark:bg-light md:w-[2px] md:left-[30px] xs:left-[20px]'></motion.div>
         <ul className=' w-full flex flex-col items-start justify-between ml-4 xs:ml-2 
         '>
-            <Details type='Bachelor Of Science In Computer Science' time='2016-2020'
-            place='Massachusetts Institute Of Technology (MIT)' info='Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
-            Intelligence.'
-            />
-            <Details type='Bachelor Of Science In Computer Science' time='2016-2020'
-            place='Massachusetts Institute Of Technology (MIT)' info='Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
-            Intelligence.'
-            />
-            <Details type='Bachelor Of Science In Computer Science' time='2016-2020'
-            place='Massachusetts Institute Of Technology (MIT)' info='Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
+            <Details type='Bachelor Of Technology in Electronics and Communication' time='2021-2025'
+            place='National Institute of Technology, Surat' info='Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
             Intelligence.'
             />
         </ul>
